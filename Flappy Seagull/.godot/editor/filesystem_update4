@@ -1,0 +1,10 @@
+res://Scenes/hud.tscn
+res://Scenes/player.tscn
+res://Scenes/main.tscn
+res://Scenes/pipe.tscn
+res://Scripts/ConfigController.cs
+res://Scripts/SettingsMenu.cs
+res://Scripts/Main.cs
+res://Scripts/Pipe.cs
+res://Scripts/Hud.cs
+res://Scripts/Player.cs

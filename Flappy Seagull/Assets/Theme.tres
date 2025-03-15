@@ -1,0 +1,41 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dgxyobpwe1poe"]
+
+[ext_resource type="FontFile" uid="uid://dpi6d0dmtk676" path="res://Assets/Pridi/Pridi-Medium.ttf" id="1_xcxgj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0onf"]
+bg_color = Color(0.121678, 0.458261, 0.688898, 1)
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0431373, 0.243137, 0.376471, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6fbih"]
+bg_color = Color(0.153825, 0.515687, 0.764679, 1)
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0424482, 0.244169, 0.378173, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1xeu"]
+bg_color = Color(0.119734, 0.45423, 0.683255, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_bottom = 3
+border_color = Color(0.0745098, 0.337255, 0.509804, 0)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[resource]
+default_font = ExtResource("1_xcxgj")
+default_font_size = 45
+Button/styles/hover = SubResource("StyleBoxFlat_e0onf")
+Button/styles/normal = SubResource("StyleBoxFlat_6fbih")
+Button/styles/pressed = SubResource("StyleBoxFlat_t1xeu")

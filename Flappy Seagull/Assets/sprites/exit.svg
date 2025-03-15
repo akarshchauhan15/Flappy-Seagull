@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="55.905525mm"
+   height="53.85981mm"
+   viewBox="0 0 55.905525 53.85981"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="exit.svg"
+   inkscape:export-filename="E:\Projects\Godot\Flappy Seagull\Assets\sprites\exit.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3950758"
+     inkscape:cx="-58.77817"
+     inkscape:cy="215.40049"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="2.1885819e-25"
+       width="55.905525"
+       height="53.85981"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.04351259,-0.04338839)">
+    <path
+       id="rect1"
+       style="fill:none;fill-opacity:0.717201;stroke:#000000;stroke-width:5.00002;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 34.250957,33.40657 V 51.403186 H 2.5435226 V 2.5433984 H 34.250957 V 18.872128"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       d="m 18.397715,23.714811 v 2.220901 2.2209 h 31.951553 v -4.441801 z"
+       id="path1"
+       sodipodi:nodetypes="cccccc"
+       style="stroke-width:1" />
+    <path
+       style="stroke-width:1;paint-order:markers fill stroke"
+       d="m 46.45528,13.453563 -3.541487,2.687636 7.440775,9.787573 -6.895396,8.959939 3.524119,2.706721 8.965749,-11.651046 z"
+       id="path3" />
+  </g>
+</svg>

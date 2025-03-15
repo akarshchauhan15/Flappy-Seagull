@@ -1,0 +1,68 @@
+[gd_scene load_steps=9 format=3 uid="uid://bnrpe0hw7o06t"]
+
+[ext_resource type="Script" uid="uid://ca0ygjailxqxb" path="res://Scripts/Main.cs" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://djevw6jjgvnj0" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://c7muyfggqycwk" path="res://Scenes/hud.tscn" id="2_8gbba"]
+[ext_resource type="Texture2D" uid="uid://dt434y0vg611s" path="res://Assets/sprites/background.svg" id="2_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://bn7tqb8o88mgc" path="res://Assets/sprites/backmountains.png" id="3_21xkr"]
+[ext_resource type="Texture2D" uid="uid://djl8iokwgmwl4" path="res://Assets/sprites/frontmountains.png" id="4_6bp64"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_kry3j"]
+a = Vector2(-1, 773)
+b = Vector2(1284, 773)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_21xkr"]
+a = Vector2(0, -84)
+b = Vector2(1279, -84)
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource("1_bo1nx")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground"]
+modulate = Color(0.877616, 0.877616, 0.877616, 1)
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_jjvhh")
+
+[node name="FarMountains" type="Parallax2D" parent="ParallaxBackground"]
+repeat_size = Vector2(1848, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarMountains"]
+position = Vector2(924, 422)
+scale = Vector2(8, 8)
+texture = ExtResource("3_21xkr")
+
+[node name="NearMountains" type="Parallax2D" parent="ParallaxBackground"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-30, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/NearMountains"]
+position = Vector2(960, 528)
+scale = Vector2(6, 6)
+texture = ExtResource("4_6bp64")
+
+[node name="Pipes" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_jjgbg")]
+
+[node name="HUD" parent="." instance=ExtResource("2_8gbba")]
+
+[node name="PipeTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="Floor" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("SegmentShape2D_kry3j")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("SegmentShape2D_21xkr")
+
+[connection signal="timeout" from="PipeTimer" to="." method="AddPipe"]

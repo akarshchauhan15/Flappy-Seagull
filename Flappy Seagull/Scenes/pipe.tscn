@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://c54ti3vj2h3vw"]
+
+[ext_resource type="Script" uid="uid://bdmnbgbdfb417" path="res://Scripts/Pipe.cs" id="1_hnit7"]
+[ext_resource type="Texture2D" uid="uid://ecvl7q0k7pca" path="res://Assets/sprites/pipe.png" id="1_n21g0"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hnit7"]
+a = Vector2(-25, -376)
+b = Vector2(-25, 473)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hnit7"]
+size = Vector2(130, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1buf"]
+size = Vector2(80, 585)
+
+[node name="Pipe" type="Node2D" groups=["Pipe"]]
+script = ExtResource("1_hnit7")
+
+[node name="PointArea" type="Area2D" parent="."]
+position = Vector2(89, -17)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PointArea"]
+shape = SubResource("SegmentShape2D_hnit7")
+
+[node name="Lower" type="Area2D" parent="."]
+position = Vector2(0, 100)
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Pipe" type="Sprite2D" parent="Lower"]
+position = Vector2(0, 320)
+scale = Vector2(5, 5)
+texture = ExtResource("1_n21g0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lower"]
+position = Vector2(0, 27.5)
+shape = SubResource("RectangleShape2D_hnit7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Lower"]
+position = Vector2(0, 347.5)
+shape = SubResource("RectangleShape2D_p1buf")
+
+[node name="Upper" type="Area2D" parent="."]
+position = Vector2(0, -100)
+rotation = 3.14159
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Pipe" type="Sprite2D" parent="Upper"]
+position = Vector2(0, 320)
+scale = Vector2(5, 5)
+texture = ExtResource("1_n21g0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Upper"]
+position = Vector2(0, 27.5)
+shape = SubResource("RectangleShape2D_hnit7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Upper"]
+position = Vector2(0, 347.5)
+shape = SubResource("RectangleShape2D_p1buf")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-225.5, -0.5)
+scale = Vector2(29.05, 74.05)
+
+[connection signal="body_entered" from="PointArea" to="." method="IncreaseScore"]
+[connection signal="body_entered" from="Lower" to="." method="StopMovement"]
+[connection signal="body_entered" from="Upper" to="." method="StopMovement"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="Kill"]
