@@ -6,9 +6,8 @@ Flappy Seagull is engaging indie game based on Flappy Bird written using C# and 
 - When playing, click anywhere to flap.
 - Avoid the approaching pipes, try your best to fly between them.
 - The score is indicated at the top.
-- Clicking the score label of pressing MMB, Ctrl when not playing will open the Score Menu.
-  - There is a button to open settings menu.
-    - Several adjustments can be made here.
+- Click the score to open score menu.
+- Change settings for a personalized game experience.
 - Hold Escape for a few sceonds to exit.
 
 ## Images
