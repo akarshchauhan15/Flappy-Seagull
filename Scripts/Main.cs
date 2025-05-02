@@ -46,5 +46,6 @@ public partial class Main : CanvasLayer
     {
         timer.Stop();
         playing = false;
+        HUD.AddScore();
     }
 }

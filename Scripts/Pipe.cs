@@ -27,7 +27,7 @@ public partial class Pipe : Node2D
         GetNode<Area2D>("Upper").Translate(new Vector2(0, -Gap));
         GetNode<Area2D>("Lower").Translate(new Vector2(0, Gap));
     }
-    public override void _PhysicsProcess(double delta)
+    public override void _Process(double delta)
     {
         Position -= new Vector2(Speed, 0) * (float)delta;
     }

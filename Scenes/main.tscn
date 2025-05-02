@@ -30,6 +30,7 @@ texture = ExtResource("2_jjvhh")
 repeat_size = Vector2(1848, 0)
 autoscroll = Vector2(-10, 0)
 repeat_times = 2
+follow_viewport = false
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarMountains"]
 position = Vector2(924, 422)

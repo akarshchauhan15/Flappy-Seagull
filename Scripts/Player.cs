@@ -1,6 +1,4 @@
 using Godot;
-using Godot.NativeInterop;
-using System;
 
 public partial class Player : CharacterBody2D
 {
@@ -35,7 +33,7 @@ public partial class Player : CharacterBody2D
         Fell += main.StopTimer;
         main.GetNode<Area2D>("Floor").BodyEntered += FellToFloor;
     }
-    public override void _PhysicsProcess(double delta)
+    public override void _Process(double delta)
     {
         if (main.playing)
         {

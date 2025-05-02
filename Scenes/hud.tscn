@@ -1,0 +1,1608 @@
+<<<<<<< Updated upstream
+[gd_scene load_steps=25 format=3 uid="uid://c7muyfggqycwk"]
+=======
+[gd_scene load_steps=34 format=3 uid="uid://c7muyfggqycwk"]
+>>>>>>> Stashed changes
+
+[ext_resource type="Script" uid="uid://c67ygjncbi2pu" path="res://Scripts/Hud.cs" id="1_6fbih"]
+[ext_resource type="FontFile" uid="uid://dpi6d0dmtk676" path="res://Assets/Pridi/Pridi-Medium.ttf" id="1_e0onf"]
+[ext_resource type="Script" uid="uid://dithb55d2b45w" path="res://Scripts/SettingsMenu.cs" id="3_bjfho"]
+[ext_resource type="Texture2D" uid="uid://c8447vha1p1un" path="res://Assets/sprites/ToggleOff.svg" id="4_6fbih"]
+[ext_resource type="Texture2D" uid="uid://dku4p2qhs5ol7" path="res://Assets/sprites/ToggleOn.svg" id="4_t1xeu"]
+[ext_resource type="Theme" uid="uid://b8xjmu38kv775" path="res://WindowsMetro.theme" id="6_8jye8"]
+[ext_resource type="FontFile" uid="uid://bp7m5hsvwrt8s" path="res://Assets/Roboto.ttf" id="7_43w4t"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_8jye8"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="InputEventKey" id="InputEventKey_43w4t"]
+device = -1
+keycode = 32
+unicode = 32
+
+[sub_resource type="Shortcut" id="Shortcut_7gr8i"]
+events = [SubResource("InputEventKey_8jye8"), SubResource("InputEventKey_43w4t")]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1xeu"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_t1xeu"]
+device = -1
+keycode = 73
+unicode = 105
+
+[sub_resource type="InputEventKey" id="InputEventKey_36asn"]
+device = -1
+keycode = 4194326
+
+[sub_resource type="InputEventMouseButton" id="InputEventMouseButton_8jye8"]
+button_mask = 4
+position = Vector2(163, 27)
+global_position = Vector2(172, 75)
+button_index = 3
+pressed = true
+
+[sub_resource type="Shortcut" id="Shortcut_43w4t"]
+events = [SubResource("InputEventKey_t1xeu"), SubResource("InputEventKey_36asn"), SubResource("InputEventMouseButton_8jye8")]
+
+<<<<<<< Updated upstream
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fccik"]
+=======
+[sub_resource type="InputEventKey" id="InputEventKey_4f5kr"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="InputEventKey" id="InputEventKey_piegi"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_i2avg"]
+button_index = 1
+
+[sub_resource type="Shortcut" id="Shortcut_1a2va"]
+events = [SubResource("InputEventKey_4f5kr"), SubResource("InputEventKey_piegi"), SubResource("InputEventJoypadButton_i2avg")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_7gr8i"]
+device = -1
+keycode = 4194305
+>>>>>>> Stashed changes
+
+[sub_resource type="InputEventKey" id="InputEventKey_5ep0j"]
+device = -1
+keycode = 4194305
+
+<<<<<<< Updated upstream
+[sub_resource type="InputEventKey" id="InputEventKey_4f5kr"]
+device = -1
+keycode = 4194308
+
+[sub_resource type="Shortcut" id="Shortcut_piegi"]
+events = [SubResource("InputEventKey_5ep0j"), SubResource("InputEventKey_4f5kr")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fccik"]
+bg_color = Color(0, 0, 0, 0.215686)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.237169, 0.402535, 0.892448, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjfho"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1xeu"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+=======
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_ssfue"]
+button_index = 1
+
+[sub_resource type="Shortcut" id="Shortcut_4f5kr"]
+events = [SubResource("InputEventKey_7gr8i"), SubResource("InputEventKey_5ep0j"), SubResource("InputEventJoypadButton_ssfue")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1xeu"]
+bg_color = Color(0, 0, 0, 0.568627)
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_t1xeu"]
+
+[sub_resource type="Shortcut" id="Shortcut_36asn"]
+events = [SubResource("InputEventKey_5ep0j"), SubResource("InputEventJoypadButton_t1xeu")]
+
+[sub_resource type="Shortcut" id="Shortcut_8jye8"]
+events = [SubResource("InputEventKey_7gr8i"), SubResource("InputEventJoypadButton_ssfue")]
+
+[sub_resource type="Animation" id="Animation_5ep0j"]
+resource_name = "CloseScores"
+length = 0.5
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScorePanel:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.29),
+"transitions": PackedFloat32Array(0.366, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.6, 0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScorePanel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.29),
+"transitions": PackedFloat32Array(0.366, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(256, 144)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ScorePanel:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ScorePanel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StartMenu:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.32),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_t1xeu"]
+resource_name = "CloseSettings"
+length = 0.32
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Settings:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Settings:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Settings:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.29),
+"transitions": PackedFloat32Array(0.366021, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.6, 0.6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Settings:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.29),
+"transitions": PackedFloat32Array(0.366022, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(256, 144)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScorePanel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+>>>>>>> Stashed changes
+
+[sub_resource type="Animation" id="Animation_8jye8"]
+resource_name = "Default"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScorePanel/NoScores:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+<<<<<<< Updated upstream
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_43w4t"]
+_data = {
+&"Default": SubResource("Animation_8jye8")
+=======
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScorePanel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Settings:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartMenu:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Settings/ResetConfirmationPanel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_43w4t"]
+resource_name = "OpenScores"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScorePanel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1280, 720)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScorePanel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ScorePanel:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.25, 0.25), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ScorePanel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScorePanel:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("StartMenu:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_4f5kr"]
+resource_name = "OpenSettings"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Settings:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Settings:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(0.732043, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Settings:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScorePanel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_36asn"]
+resource_name = "OpenResetConfirmation"
+length = 0.2
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Settings/ResetConfirmationPanel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Settings/ResetConfirmationPanel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_7gr8i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScorePanel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScorePanel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(256, 144)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_43w4t"]
+_data = {
+&"CloseScores": SubResource("Animation_5ep0j"),
+&"CloseSettings": SubResource("Animation_t1xeu"),
+&"Default": SubResource("Animation_8jye8"),
+&"OpenResetConfirmation": SubResource("Animation_36asn"),
+&"OpenScores": SubResource("Animation_43w4t"),
+&"OpenSettings": SubResource("Animation_4f5kr"),
+&"RESET": SubResource("Animation_7gr8i")
+>>>>>>> Stashed changes
+}
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_6fbih")
+
+[node name="QuitLabel" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -46.0
+offset_right = 138.0
+offset_bottom = -2.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 28
+text = "Quitting..."
+
+[node name="Overlay" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreLabel" type="Label" parent="Overlay"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -15.5
+offset_top = 24.0
+offset_right = 15.5
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+
+[node name="StartMenu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="StartMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+shortcut = SubResource("Shortcut_7gr8i")
+shortcut_feedback = false
+shortcut_in_tooltip = false
+flat = true
+
+[node name="SettingsButton" type="Button" parent="StartMenu"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.0
+offset_top = 37.0
+offset_right = 30.0
+offset_bottom = 87.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t1xeu")
+shortcut = SubResource("Shortcut_43w4t")
+shortcut_feedback = false
+shortcut_in_tooltip = false
+flat = true
+
+<<<<<<< Updated upstream
+[node name="SettingsMenu" type="Panel" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fccik")
+script = ExtResource("3_bjfho")
+
+[node name="Exit" type="Button" parent="SettingsMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+mouse_default_cursor_shape = 8
+shortcut = SubResource("Shortcut_piegi")
+shortcut_feedback = false
+shortcut_in_tooltip = false
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Panel" type="Panel" parent="SettingsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -458.5
+offset_top = -246.0
+offset_right = 458.5
+offset_bottom = 246.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fccik")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -114.5
+offset_top = 4.0
+offset_right = 114.5
+offset_bottom = 82.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 50
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="Difficulty" type="Panel" parent="SettingsMenu/Panel"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 102.0
+offset_right = 428.0
+offset_bottom = 318.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjfho")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -115.5
+offset_top = 11.0
+offset_right = 96.5
+offset_bottom = 68.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Difficulty"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.5
+offset_top = 59.0
+offset_right = -50.5
+offset_bottom = 116.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Speed"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.5
+offset_top = 104.0
+offset_right = -52.5
+offset_bottom = 161.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Gap"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.5
+offset_top = 149.0
+offset_right = -52.5
+offset_bottom = 206.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Rate"
+horizontal_alignment = 1
+
+[node name="SpeedSlider" type="HSlider" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -37.0
+offset_top = 78.0
+offset_right = 151.0
+offset_bottom = 94.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Player/GravitySlider")
+focus_neighbor_top = NodePath("../../Sound/CheckButton")
+focus_neighbor_right = NodePath("../../Controls")
+focus_neighbor_bottom = NodePath("../GapSlider")
+mouse_default_cursor_shape = 10
+max_value = 4.0
+value = 2.0
+
+[node name="GapSlider" type="HSlider" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.5
+offset_top = 126.0
+offset_right = 151.5
+offset_bottom = 142.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Player/JumpSlider")
+focus_neighbor_top = NodePath("../SpeedSlider")
+focus_neighbor_right = NodePath("../../Player/JumpSlider")
+focus_neighbor_bottom = NodePath("../RateSlider")
+mouse_default_cursor_shape = 10
+max_value = 4.0
+value = 2.0
+
+[node name="RateSlider" type="HSlider" parent="SettingsMenu/Panel/Difficulty"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.5
+offset_top = 172.0
+offset_right = 151.5
+offset_bottom = 188.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Player/JumpSlider")
+focus_neighbor_top = NodePath("../GapSlider")
+focus_neighbor_right = NodePath("../../Player/JumpSlider")
+focus_neighbor_bottom = NodePath("../../Sound/CheckButton")
+mouse_default_cursor_shape = 10
+max_value = 4.0
+value = 2.0
+
+[node name="Sound" type="Panel" parent="SettingsMenu/Panel"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 347.0
+offset_right = 300.0
+offset_bottom = 449.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjfho")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel/Sound"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -29.0
+offset_right = 183.5
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Sound"
+horizontal_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="SettingsMenu/Panel/Sound"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.5
+offset_top = -18.0
+offset_right = 521.5
+offset_bottom = 157.0
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+focus_neighbor_left = NodePath("../../MadeBy/LinkButton")
+focus_neighbor_top = NodePath("../../Difficulty/RateSlider")
+focus_neighbor_right = NodePath("../../MadeBy/LinkButton")
+focus_neighbor_bottom = NodePath("../../Difficulty/SpeedSlider")
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_t1xeu")
+theme_override_icons/checked = ExtResource("4_t1xeu")
+theme_override_icons/unchecked = ExtResource("4_6fbih")
+button_pressed = true
+
+[node name="Player" type="Panel" parent="SettingsMenu/Panel"]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 102.0
+offset_right = 878.0
+offset_bottom = 287.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjfho")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 8.0
+offset_right = 106.0
+offset_bottom = 65.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Player"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="SettingsMenu/Panel/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -174.5
+offset_top = 58.0
+offset_right = -53.5
+offset_bottom = 115.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Gravity"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="SettingsMenu/Panel/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.5
+offset_top = 104.0
+offset_right = -52.5
+offset_bottom = 161.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Jump"
+horizontal_alignment = 1
+
+[node name="GravitySlider" type="HSlider" parent="SettingsMenu/Panel/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_top = 80.0
+offset_right = 153.0
+offset_bottom = 96.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Difficulty/SpeedSlider")
+focus_neighbor_top = NodePath("../../MadeBy/LinkButton")
+focus_neighbor_right = NodePath("../../Difficulty/SpeedSlider")
+focus_neighbor_bottom = NodePath("../JumpSlider")
+mouse_default_cursor_shape = 10
+max_value = 4.0
+value = 2.0
+
+[node name="JumpSlider" type="HSlider" parent="SettingsMenu/Panel/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.5
+offset_top = 128.0
+offset_right = 151.5
+offset_bottom = 144.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Difficulty/GapSlider")
+focus_neighbor_top = NodePath("../GravitySlider")
+focus_neighbor_right = NodePath("../../Difficulty/GapSlider")
+focus_neighbor_bottom = NodePath("../../MadeBy/LinkButton")
+mouse_default_cursor_shape = 10
+max_value = 4.0
+value = 2.0
+
+[node name="Controls" type="Panel" parent="SettingsMenu/Panel"]
+layout_mode = 0
+offset_left = 658.0
+offset_top = 318.0
+offset_right = 871.0
+offset_bottom = 447.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjfho")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel/Controls"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = -2.0
+offset_right = 107.0
+offset_bottom = 55.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Controls"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="SettingsMenu/Panel/Controls"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -87.0
+offset_top = 51.0
+offset_right = 1.0
+offset_bottom = 118.0
+grow_horizontal = 2
+theme_override_constants/paragraph_spacing = -16
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 25
+text = "LMB
+Space"
+
+[node name="Label3" type="Label" parent="SettingsMenu/Panel/Controls"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 7.0
+offset_top = 53.0
+offset_right = 95.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_constants/paragraph_spacing = -16
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 25
+text = "Enter
+Xbox A"
+
+[node name="MadeBy" type="Panel" parent="SettingsMenu/Panel"]
+layout_mode = 0
+offset_left = 334.0
+offset_top = 347.0
+offset_right = 618.0
+offset_bottom = 447.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjfho")
+
+[node name="Label" type="Label" parent="SettingsMenu/Panel/MadeBy"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -115.0
+offset_right = 104.0
+offset_bottom = 59.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 35
+text = "Created By"
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="LinkButton" type="LinkButton" parent="SettingsMenu/Panel/MadeBy"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -117.5
+offset_top = 45.0
+offset_right = 124.5
+offset_bottom = 96.0
+grow_horizontal = 2
+focus_neighbor_left = NodePath("../../Sound/CheckButton")
+focus_neighbor_top = NodePath("../../Player/JumpSlider")
+focus_neighbor_right = NodePath("../../Sound/CheckButton")
+focus_neighbor_bottom = NodePath("../../Player/GravitySlider")
+focus_mode = 2
+theme_override_colors/font_color = Color(0.748903, 0.745671, 0.821297, 1)
+theme_override_colors/font_hover_color = Color(0.562068, 0.34272, 0.88668, 1)
+theme_override_fonts/font = ExtResource("1_e0onf")
+theme_override_font_sizes/font_size = 32
+text = "Akarsh Chauhan"
+underline = 1
+uri = "https://github.com/akarshchauhan15"
+
+[node name="ScorePanel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+=======
+[node name="ScorePanel" type="Panel" parent="."]
+clip_contents = true
+offset_left = 256.0
+offset_top = 144.0
+offset_right = 1536.0
+offset_bottom = 864.0
+>>>>>>> Stashed changes
+theme = ExtResource("6_8jye8")
+
+[node name="Score" type="Label" parent="ScorePanel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 17.0
+offset_right = 324.0
+offset_bottom = 88.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 60
+text = "Highscores"
+
+[node name="Scores" type="Label" parent="ScorePanel"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 156.0
+offset_right = 148.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 34
+
+[node name="NoScores" type="Label" parent="ScorePanel"]
+visible = false
+layout_mode = 0
+offset_left = 38.0
+offset_top = 653.0
+offset_right = 857.0
+offset_bottom = 694.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+<<<<<<< Updated upstream
+theme_override_font_sizes/font_size = 34
+text = "No previous scores are found, try playing some rounds"
+=======
+theme_override_font_sizes/font_size = 26
+text = "No previous scores are found, try playing some rounds."
+>>>>>>> Stashed changes
+
+[node name="Dates" type="Label" parent="ScorePanel"]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 156.0
+offset_right = 458.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 34
+
+[node name="HighScore" type="Label" parent="ScorePanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -261.0
+offset_top = 15.0
+offset_right = -24.0
+offset_bottom = 133.0
+grow_horizontal = 0
+theme = ExtResource("6_8jye8")
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 70
+horizontal_alignment = 2
+
+[node name="ExitButton" type="Button" parent="ScorePanel"]
+layout_mode = 0
+offset_left = 1068.0
+offset_top = 633.0
+offset_right = 1238.0
+offset_bottom = 690.0
+theme = ExtResource("6_8jye8")
+shortcut = SubResource("Shortcut_1a2va")
+shortcut_in_tooltip = false
+text = "Exit"
+
+<<<<<<< Updated upstream
+=======
+[node name="SettingsButton" type="Button" parent="ScorePanel"]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 633.0
+offset_right = 1043.0
+offset_bottom = 690.0
+theme = ExtResource("6_8jye8")
+shortcut_in_tooltip = false
+text = "Settings"
+
+[node name="Settings" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_8jye8")
+script = ExtResource("3_bjfho")
+
+[node name="Scroll" type="ScrollContainer" parent="Settings"]
+layout_mode = 1
+offset_top = 114.0
+offset_right = 1280.0
+offset_bottom = 718.0
+scroll_vertical = 298
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="Control" type="Control" parent="Settings/Scroll"]
+custom_minimum_size = Vector2(1280, 1682)
+layout_mode = 2
+
+[node name="Pipes" type="Control" parent="Settings/Scroll/Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 36.0
+offset_right = 170.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 46
+text = "Pipes"
+
+[node name="Label2" type="Label" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 126.0
+offset_right = 151.0
+offset_bottom = 162.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Speed"
+
+[node name="Label3" type="Label" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 174.0
+offset_right = 151.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Spacing"
+
+[node name="Label4" type="Label" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 222.0
+offset_right = 172.0
+offset_bottom = 270.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Interval"
+
+[node name="SpeedSlider" type="HSlider" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 292.0
+offset_top = 134.0
+offset_right = 635.0
+offset_bottom = 146.0
+grow_horizontal = 2
+focus_neighbor_bottom = NodePath("../GapSlider")
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 10
+theme = ExtResource("6_8jye8")
+max_value = 4.0
+value = 2.0
+
+[node name="GapSlider" type="HSlider" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 292.0
+offset_top = 182.0
+offset_right = 636.0
+offset_bottom = 198.0
+grow_horizontal = 2
+focus_neighbor_top = NodePath("../SpeedSlider")
+focus_neighbor_bottom = NodePath("../RateSlider")
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 10
+theme = ExtResource("6_8jye8")
+max_value = 4.0
+value = 2.0
+
+[node name="RateSlider" type="HSlider" parent="Settings/Scroll/Control/Pipes"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 292.0
+offset_top = 230.0
+offset_right = 636.0
+offset_bottom = 246.0
+grow_horizontal = 2
+focus_neighbor_top = NodePath("../GapSlider")
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 10
+theme = ExtResource("6_8jye8")
+max_value = 4.0
+value = 2.0
+
+[node name="Player" type="Control" parent="Settings/Scroll/Control"]
+anchors_preset = 0
+offset_top = 301.0
+offset_right = 40.0
+offset_bottom = 341.0
+
+[node name="Label" type="Label" parent="Settings/Scroll/Control/Player"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 36.0
+offset_right = 170.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 46
+text = "Player"
+
+[node name="Label2" type="Label" parent="Settings/Scroll/Control/Player"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 123.0
+offset_right = 151.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Jump"
+
+[node name="Label3" type="Label" parent="Settings/Scroll/Control/Player"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 171.0
+offset_right = 132.0
+offset_bottom = 207.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Gravity"
+
+[node name="JumpSlider" type="HSlider" parent="Settings/Scroll/Control/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 292.0
+offset_top = 135.0
+offset_right = 635.0
+offset_bottom = 151.0
+grow_horizontal = 2
+focus_neighbor_bottom = NodePath("../GravitySlider")
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 10
+theme = ExtResource("6_8jye8")
+max_value = 4.0
+value = 2.0
+
+[node name="GravitySlider" type="HSlider" parent="Settings/Scroll/Control/Player"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 292.0
+offset_top = 183.0
+offset_right = 636.0
+offset_bottom = 199.0
+grow_horizontal = 2
+focus_neighbor_top = NodePath("../JumpSlider")
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 10
+theme = ExtResource("6_8jye8")
+max_value = 4.0
+value = 2.0
+
+[node name="Sound" type="Control" parent="Settings/Scroll/Control"]
+anchors_preset = 0
+offset_top = 539.0
+offset_right = 40.0
+offset_bottom = 579.0
+
+[node name="Label" type="Label" parent="Settings/Scroll/Control/Sound"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 36.0
+offset_right = 170.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 46
+text = "Sound"
+
+[node name="Label2" type="Label" parent="Settings/Scroll/Control/Sound"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 123.0
+offset_right = 151.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Game Sound"
+
+[node name="SoundButton" type="Button" parent="Settings/Scroll/Control/Sound"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 119.0
+offset_right = 566.0
+offset_bottom = 170.0
+theme = ExtResource("6_8jye8")
+toggle_mode = true
+button_pressed = true
+text = "Disable"
+
+[node name="Controls" type="Control" parent="Settings/Scroll/Control"]
+anchors_preset = 0
+offset_top = 719.0
+offset_right = 40.0
+offset_bottom = 759.0
+
+[node name="Label" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 36.0
+offset_right = 170.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 46
+text = "Controls"
+
+[node name="Label2" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 123.0
+offset_right = 151.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Flap"
+
+[node name="Label3" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 123.0
+offset_right = 703.0
+offset_bottom = 273.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "LMB
+Space      Enter
+Xbox A    PS Cross"
+
+[node name="Label5" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 302.0
+offset_right = 703.0
+offset_bottom = 401.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "I
+Start"
+
+[node name="Label7" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 427.0
+offset_right = 703.0
+offset_bottom = 526.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Escape
+Xbox b    PS Circle"
+
+[node name="Label4" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 302.0
+offset_right = 151.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Open Settings"
+
+[node name="Label6" type="Label" parent="Settings/Scroll/Control/Controls"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 427.0
+offset_right = 289.0
+offset_bottom = 475.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="Credits" type="Control" parent="Settings/Scroll/Control"]
+anchors_preset = 0
+offset_top = 1270.0
+offset_right = 40.0
+offset_bottom = 1310.0
+
+[node name="Label" type="Label" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 36.0
+offset_right = 170.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 46
+text = "Credits"
+
+[node name="Label2" type="Label" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 123.0
+offset_right = 151.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Created By"
+
+[node name="Label3" type="Label" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 174.0
+offset_right = 233.0
+offset_bottom = 222.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Using"
+
+[node name="Label4" type="Label" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 356.0
+offset_right = 217.0
+offset_bottom = 392.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Version 1.1.0"
+
+[node name="LinkButton2" type="LinkButton" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 355.0
+offset_top = 123.0
+offset_right = 647.0
+offset_bottom = 174.0
+grow_horizontal = 2
+focus_mode = 2
+theme_override_colors/font_color = Color(0.703759, 0.699379, 0.980835, 1)
+theme_override_colors/font_hover_color = Color(0.562068, 0.34272, 0.88668, 1)
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Akarsh Chauhan"
+underline = 1
+uri = "https://github.com/akarshchauhan15"
+
+[node name="LinkButton3" type="LinkButton" parent="Settings/Scroll/Control/Credits"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 355.0
+offset_top = 174.0
+offset_right = 647.0
+offset_bottom = 225.0
+grow_horizontal = 2
+focus_mode = 2
+theme_override_colors/font_color = Color(0.703759, 0.699379, 0.980835, 1)
+theme_override_colors/font_hover_color = Color(0.562068, 0.34272, 0.88668, 1)
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 30
+text = "Godot Engine"
+underline = 1
+uri = "https://godotengine.org/"
+
+[node name="Settings" type="Label" parent="Settings"]
+layout_mode = 2
+offset_left = 21.0
+offset_top = 15.0
+offset_right = 312.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 70
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 1068.0
+offset_top = 633.0
+offset_right = 1238.0
+offset_bottom = 690.0
+theme = ExtResource("6_8jye8")
+shortcut = SubResource("Shortcut_4f5kr")
+shortcut_in_tooltip = false
+text = "Exit"
+
+[node name="ResetButton" type="Button" parent="Settings"]
+layout_mode = 0
+offset_left = 874.0
+offset_top = 633.0
+offset_right = 1044.0
+offset_bottom = 690.0
+theme = ExtResource("6_8jye8")
+shortcut_in_tooltip = false
+text = "Reset"
+
+[node name="ResetConfirmationPanel" type="Panel" parent="Settings" node_paths=PackedStringArray("shortcut_context")]
+visible = false
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 718.0
+shortcut_context = NodePath(".")
+theme_override_styles/panel = SubResource("StyleBoxFlat_t1xeu")
+
+[node name="ColorRect" type="ColorRect" parent="Settings/ResetConfirmationPanel"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -154.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.313726, 0.701961, 1)
+
+[node name="Reset" type="Label" parent="Settings/ResetConfirmationPanel"]
+layout_mode = 2
+offset_left = 21.0
+offset_top = 219.0
+offset_right = 312.0
+offset_bottom = 302.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 70
+text = "Reset all settings?"
+
+[node name="Label" type="Label" parent="Settings/ResetConfirmationPanel"]
+layout_mode = 2
+offset_left = 24.0
+offset_top = 336.0
+offset_right = 694.0
+offset_bottom = 368.0
+theme_override_fonts/font = ExtResource("7_43w4t")
+theme_override_font_sizes/font_size = 26
+text = "This will result in reverting of all the settings to default."
+autowrap_mode = 2
+
+[node name="AcceptButton" type="Button" parent="Settings/ResetConfirmationPanel"]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 437.0
+offset_right = 1043.0
+offset_bottom = 494.0
+theme = ExtResource("6_8jye8")
+shortcut = SubResource("Shortcut_36asn")
+shortcut_in_tooltip = false
+text = "Accept"
+
+[node name="DeclineButton" type="Button" parent="Settings/ResetConfirmationPanel"]
+layout_mode = 0
+offset_left = 1068.0
+offset_top = 437.0
+offset_right = 1238.0
+offset_bottom = 494.0
+theme = ExtResource("6_8jye8")
+shortcut = SubResource("Shortcut_8jye8")
+shortcut_in_tooltip = false
+text = "Cancel"
+
+>>>>>>> Stashed changes
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_43w4t")
+}
+autoplay = "Default"
+
+[connection signal="pressed" from="StartMenu/SettingsButton" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="SettingsMenu/Exit" to="SettingsMenu" method="OnSettingsExited"]
