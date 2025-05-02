@@ -6,15 +6,11 @@ Flappy Seagull is engaging indie game based on Flappy Bird written using C# and 
 - When playing, click anywhere to flap.
 - Avoid the approaching pipes, try your best to fly between them.
 - The score is indicated at the top.
-- Clicking the score label of pressing MMB, Ctrl when not playing will open the Settings Menu.
-  - Several adjustments can be made here.
-  - Click outside to close.
+- Clicking the score label of pressing MMB, Ctrl when not playing will open the Score Menu.
+  - There is a button to open settings menu.
+    - Several adjustments can be made here.
 - Hold Escape for a few sceonds to exit.
 
 ## Images
-
-<p align="center">
-<img src="https://github.com/akarshchauhan15/Flappy-Seagull/blob/main/Images/Main.png" alt="Idle" width="600px">
-<img src="https://github.com/akarshchauhan15/Flappy-Seagull/blob/main/Images/Playing.png" alt="Playing" width="600px">
-<img src="https://github.com/akarshchauhan15/Flappy-Seagull/blob/main/Images/Settings.png" alt="Settings" width="600px">
-</p>
+![Main](https://github.com/user-attachments/assets/3528460a-1a8c-4525-8ccd-8daa83bf1502)
+![Playing](https://github.com/user-attachments/assets/1d321611-eaec-4b18-8032-0efdd296440a)
